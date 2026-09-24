@@ -12,9 +12,9 @@ brew install libomp   # нужен xgboost на macOS
 Все промежуточные результаты складываются в cache/, повторный запуск занимает пару минут.
 Модели скачиваются с HuggingFace при первом запуске, всего около 6 ГБ.
 
-Данные:
-- `data/AIGTxt.xlsx` с https://data.mendeley.com/datasets/y9bj7734vf/1
-- `data/AINL-Eval-2025` это `git clone https://github.com/iis-research-team/AINL-Eval-2025`
+Данные лежат в репозитории, скачивать ничего не нужно:
+- `data/AIGTxt.xlsx` взят с https://data.mendeley.com/datasets/y9bj7734vf/1
+- `data/AINL-Eval-2025` это копия https://github.com/iis-research-team/AINL-Eval-2025
 
 ## Что где лежит
 
@@ -27,7 +27,7 @@ brew install libomp   # нужен xgboost на macOS
 | semantic.py | BARTScore (порт neulab), LM-статистики, Self-BLEU, distinct-n, MTLD, эмбеддинги |
 | prep_data.py | Загрузка и выборка текстов |
 | results/profiling_{lang}_{label}.csv | Признаки Profiling-UD по классам |
-| results/profiling_ud_input/*.conllu | Разбор по классам, для загрузки в оригинальный Profiling-UD. В репозиторий не входит (83 МБ), создаётся ноутбуком |
+| results/profiling_ud_input/*.conllu | Разбор по классам, для загрузки в оригинальный Profiling-UD. |
 | results/informative_features_{lang}.csv | Статистика по признакам: r_pb, дельта Клиффа, p с поправкой FDR |
 | results/classification.csv | Все результаты классификаторов |
 

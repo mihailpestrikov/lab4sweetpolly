@@ -1,7 +1,5 @@
 .venv/
 cache/
-data/
-results/profiling_ud_input/
 __pycache__/
 .DS_Store
 .ipynb_checkpoints/
