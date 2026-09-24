@@ -1,0 +1,19 @@
+# Python 3.14.5, macOS (Apple Silicon, MPS). На Linux/CUDA тоже работает, device выбирается сам.
+# Для xgboost на macOS нужен OpenMP: brew install libomp
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+statsmodels==0.15.0
+xgboost==3.4.1
+matplotlib==3.11.2
+seaborn==0.13.2
+pyarrow==25.0.1
+openpyxl==3.1.5
+nltk==3.10.3
+torch==2.14.0
+transformers==5.17.0
+sentencepiece==0.2.2
+bert-score==0.3.13
+stanza==1.14.0
+jupyter
